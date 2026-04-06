@@ -597,6 +597,15 @@ let trial_experiment_second = {
   //ランダム化するか否か
 };
 
+    // DataPipe 3 
+     const save_data = {
+                type: jsPsychPipe,
+                action: "save",
+                experiment_id: "g0Lhevx5IxlX",
+                filename: filename,
+                data_string: ()=>jsPsych.data.get().csv()
+              };
+      
 //実験後のお礼
 var inst_closing = {
   type: jsPsychHtmlKeyboardResponse,
@@ -609,14 +618,6 @@ var inst_closing = {
   trial_duration: 5000,
 };
 
-    // DataPipe 3 
-     const save_data = {
-                type: jsPsychPipe,
-                action: "save",
-                experiment_id: "g0Lhevx5IxlX",
-                filename: filename,
-                data_string: ()=>jsPsych.data.get().csv()
-              };
     
 jsPsych.run([
   start_fullscreen,
