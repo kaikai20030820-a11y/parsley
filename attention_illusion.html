@@ -232,11 +232,11 @@ function experiment_first(p) {
     p.translate(p.width/2, p.height/2)
     p.strokeCap(p.PROJECT)
     reactiontime=p.millis()-nw0
-    if(reactiontime<=100&&circle==1){
+    if(reactiontime<=100&&pre_circle==1){
      circle(0,illusion_size-circle_dis,circle_size)
      circle(0,illusion_size+circle_dis,circle_size)
     }
-    if(reactiontime<=100&&circle==2){
+    if(reactiontime<=100&&pre_circle==2){
      circle(illusion_size-circle_dis,0,circle_size)
      circle(illusion_size+circle_dis,0,circle_size)
     }
